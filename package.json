@@ -1,0 +1,11 @@
+{
+  "name": "portofoliu",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "sass -w ./scss:./dist/css "
+  },
+  "dependencies": {
+    "sass": "^1.52.3"
+  }
+}
