@@ -22,15 +22,6 @@
     }
   }
 
-  &__bio {
-    width: 80%;
-    text-align: center;
-
-    .text-secondary {
-      padding-bottom: 1rem;
-    }
-  }
-
   &__items {
     width: 60vw;
     margin: 2rem auto 0 auto;
@@ -71,6 +62,7 @@
         }
     }
   }
+  
   &__btns {
     position: absolute;
     top: 0;
