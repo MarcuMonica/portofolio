@@ -107,6 +107,9 @@
             padding: 2rem 0;
             font-weight: 300;
             @include transition-ease;
+            @include media-md() {
+                font-weight: 700;
+            }
 
             &:hover {
                 color: $secondary-color;

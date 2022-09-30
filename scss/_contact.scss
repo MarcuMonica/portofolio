@@ -1,6 +1,6 @@
 .contact {
     height: 100%;
-    padding-top: 40vh;
+    padding-top: 30vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -14,15 +14,27 @@
     url(../img/hannah1.jpg) center center;
     background-size: cover;
 
+    @include media-md() {
+        padding-top: 40vh;
+    }
+
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
+
+        @include media-md() {
+            font-size: 3rem;
+        }
     }
 
     &__list {
         display: grid;
         grid-template-columns:  1fr;
         grid-gap: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+
+        @include media-md() {
+            font-size: 1.5rem;
+        }
     }
 }

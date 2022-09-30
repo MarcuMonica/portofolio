@@ -6,12 +6,17 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 30vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/hannah1.jpg) center center;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .home {
+    padding-top: 40vh;
+  }
 }
 .home__name {
   font-size: 5rem;
@@ -118,6 +123,11 @@
   font-weight: 300;
   transition: all 0.5s ease-in-out;
 }
+@media screen and (min-width: 768px) {
+  .nav .menu-nav__link {
+    font-weight: 700;
+  }
+}
 .nav .menu-nav__link:hover {
   color: #ff652f;
 }
@@ -156,13 +166,13 @@
   line-height: 0.7rem;
   margin-bottom: 2rem;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .about__bio-image p {
     font-size: 14px;
     line-height: 1.4rem;
   }
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .about__bio-image p {
     font-size: 22px;
     line-height: 2rem;
@@ -194,49 +204,12 @@
 .about .jobs__job h6 {
   margin: 0.3rem 0;
 }
-.about .social-icons {
-  display: flex;
-  flex-direction: column;
+.about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
 }
 @media screen and (min-width: 768px) {
-  .about .social-icons {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .about .social-icons {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .about .social-icons {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1024px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1600px) {
-  footer {
-    display: flex;
-    flex-direction: row;
+  .about footer {
+    transform: rotate(360deg) translate(0rem, 0rem);
   }
 }
 
@@ -310,10 +283,18 @@ footer {
 .projects__btn:hover {
   color: #fff;
 }
+.projects footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+@media screen and (min-width: 768px) {
+  .projects footer {
+    transform: rotate(360deg) translate(0rem, 0rem);
+  }
+}
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 30vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -321,15 +302,30 @@ footer {
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/hannah1.jpg) center center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .contact {
+    padding-top: 40vh;
+  }
+}
 .contact h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .contact h2 {
+    font-size: 3rem;
+  }
 }
 .contact__list {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .contact__list {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -379,7 +375,9 @@ body {
   line-height: 1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 400;
 }
 
@@ -404,6 +402,8 @@ main {
   width: 100%;
 }
 main .social-icons {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   bottom: 1rem;
   left: 1rem;
@@ -415,6 +415,20 @@ main .social-icons a {
 }
 main .social-icons a:hover {
   color: #ff652f;
+}
+
+@media screen and (min-width: 768px) {
+  .about .social-icons,
+.projects .social-icons {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about footer,
+.projects footer {
+    display: flex;
+  }
 }
 
 footer {
@@ -430,22 +444,6 @@ footer {
   color: #fff;
   margin-bottom: 0.8rem;
   font-size: 12px;
-  transform: rotate(90deg) translate(-3rem, -5rem);
-}
-@media screen and (min-width: 768px) {
-  footer {
-    transform: rotate(360deg) translate(0rem, 0rem);
-  }
-}
-@media screen and (min-width: 1024px) {
-  footer {
-    transform: rotate(360deg) translate(0rem, 0rem);
-  }
-}
-@media screen and (min-width: 1600px) {
-  footer {
-    transform: rotate(360deg) translate(0rem, 0rem);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

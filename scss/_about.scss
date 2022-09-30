@@ -64,43 +64,12 @@
     }
   }
 
-  .social-icons {
-    display: flex;
-    flex-direction: column;
 
+  footer {
+    transform: rotate(90deg) translate(-3rem, -5rem);
+  
     @include media-md() {
-      display: flex;
-      flex-direction: row;
+      transform: rotate(360deg) translate(0rem, 0rem);
     }
-
-    @include media-lg() {
-      display: flex;
-      flex-direction: row;
-    }
-
-    @include media-xl() {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-
-  @include media-md() {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @include media-lg() {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @include media-xl() {
-    display: flex;
-    flex-direction: row;
   }
 }
